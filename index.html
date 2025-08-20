@@ -65,6 +65,23 @@
     </ul>
   </section>
 
+    <!-- Resume -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p style="text-align: center; margin-bottom: 20px;">
+      Download my latest CV and explore my technical expertise:
+    </p>
+    <ul>
+      <li>Programming: Python, Java, C++</li>
+      <li>Web Development: HTML, CSS, JavaScript, React</li>
+      <li>Databases: MySQL, MongoDB, Oracle, XAMPP</li>
+      <li>Tools: Git, Docker, VS Code, draw.io, Figma</li>
+    </ul>
+    <div style="text-align: center; margin-top: 25px;">
+      <a href="resume.pdf" download class="resume-btn">📄 Download CV</a>
+    </div>
+  </section>
+
   <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
@@ -227,6 +244,47 @@
       border: 1px solid #FFD700;
     }
 
+      /* Resume */
+  #resume ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+  }
+
+  #resume li {
+    background: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    color: #FFD700;
+    box-shadow: 0 3px 6px rgba(255,215,0,0.15);
+    transition: transform 0.3s, border 0.3s;
+    border: 1px solid #333;
+  }
+
+  #resume li:hover {
+    transform: scale(1.05);
+    border: 1px solid #FFD700;
+  }
+
+  .resume-btn {
+    text-decoration: none;
+    background: #FFD700;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .resume-btn:hover {
+    background: #FFC300;
+    color: #111;
+  }
+
     /* Contact */
     #contact p {
       text-align: center;
@@ -254,6 +312,7 @@
       border-top: 1px solid #FFD700;
     }
   </style>
+
 
 
 
