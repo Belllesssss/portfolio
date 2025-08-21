@@ -185,20 +185,27 @@
       flex: 1; 
       display: flex; 
       flex-direction: column; 
+      justify-content: flex-start; /* keep title aligned at top */
     }
     
     .project-content h3 { 
-      margin: 0 0 10px; 
+      margin: 0 0 15px; 
       font-size: 1.2rem; 
       text-align: center; 
       color: #FFD700; 
+    
+      min-height: 50px;   /* ensures all titles take the same space */
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
     }
     
     .project-content p { 
+      flex: 1;   /* make description fill available space */
       font-size: 0.95rem; 
       line-height: 1.4; 
       text-align: center; 
-      margin-bottom: 15px; 
+      margin-bottom: 15px;
     }
     
     .project-links { 
@@ -323,6 +330,7 @@
   </script>
 </body>
 </html>
+
 
 
 
