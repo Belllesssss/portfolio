@@ -9,7 +9,7 @@
 
   <!-- Header -->
   <header>
-    <h1>My Portfolio</h1>
+    <h1>Nur Anis</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -50,7 +50,7 @@
                 <strong>Tech Stack:</strong> jQuery, HTML, CSS, PHP, PHPMailer, XAMPP, React, Node.js, MongoDB
               </p>
             <div class="project-links">
-              <a href="https://yourprojectlink.com" target="_blank">View Project</a>
+              <a href="https://yourprojectlink.com" target="_blank" class="project-btn">View Project</a>
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@
             <h3> Rail Rover (UI/UX Design) </h3>
             <p>Rail Rover is a user-centered UI/UX design project created to simplify and enhance the way commuters interact with railway services. The design focuses on providing an intuitive, seamless, and efficient experience for users who rely on trains for daily travel.</p>
             <div class="project-links">
-              <a href="https://www.figma.com/proto/SbY3bME4108rz35yEvN92v/Rail-Rover-App?node-id=28-1228&p=f&t=l38r4VDKzXD2lCFx-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank">View Project</a>
+              <a href="https://www.figma.com/proto/SbY3bME4108rz35yEvN92v/Rail-Rover-App?node-id=28-1228&p=f&t=l38r4VDKzXD2lCFx-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" class="project-btn">View Project</a>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
             <h3> VitaLife (UI/UX Design)</h3>
             <p>VitaLife is a UI/UX design project developed to encourage sustainable living by promoting recycling and the 3R principles (Reduce, Reuse, Recycle). The app is designed with a user-friendly and engaging interface that makes recycling an easy and rewarding habit for everyone.</p>
             <div class="project-links">
-              <a href="https://www.figma.com/proto/MVKqdZMqZNNTD768u6Ebq2/VitaLife---FA_HCI?node-id=3-34&t=dPuMoEjjUCsPuTSa-1&starting-point-node-id=18%3A287" target="_blank">View Project</a>
+              <a href="https://www.figma.com/proto/MVKqdZMqZNNTD768u6Ebq2/VitaLife---FA_HCI?node-id=3-34&t=dPuMoEjjUCsPuTSa-1&starting-point-node-id=18%3A287" target="_blank" class="project-btn">View Project</a>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@
             <h3> Water Saver Challenge App (UI/UX Design) </h3>
             <p>The Water Saver Challenge App is a UI/UX design project created to promote sustainable water usage and encourage users to adopt water-saving habits through tracking, rewards, and community engagement. The app’s design ensures a seamless, interactive, and motivating experience for users who want to monitor and reduce their daily water consumption.</p>
             <div class="project-links">
-              <a href="https://www.figma.com/proto/2e84ZqU30xRF99n23gH5kf/Water-Saver-Challenge-App?node-id=420-559&p=f&t=wfM5zDC8uQWMJwE9-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=420%3A559&show-proto-sidebar=1" target="_blank">View Project</a>
+              <a href="https://www.figma.com/proto/2e84ZqU30xRF99n23gH5kf/Water-Saver-Challenge-App?node-id=420-559&p=f&t=wfM5zDC8uQWMJwE9-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=420%3A559&show-proto-sidebar=1" target="_blank" class="project-btn">View Project</a>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@
       <div class="resume-card"><div class="resume-content"><h3>Tools</h3><p>Git, Docker, VS Code, Figma, draw.io</p></div></div>
     </div>
     <div style="text-align: center; margin-top: 25px;">
-      <a href="resume.pdf" download class="resume-btn">📄 Download CV</a>
+<!--       <a href="resume.pdf" download class="resume-btn">📄 Download CV</a> -->
     </div>
   </section>
 
@@ -145,13 +145,13 @@
 
   <style>
     /* Keep all your existing styles */
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #111; color: #fff; line-height: 1.6; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #111; color: #fff; line-height: 1.6; position: center; }
     header { background: #222; color: #FFD700; padding: 20px; text-align: center; }
     header h1 { margin: 0; font-size: 2rem; }
     nav a { color: #FFD700; margin: 0 15px; text-decoration: none; font-weight: bold; }
     nav a:hover { color: #FFC300; }
     section { padding: 40px 20px; max-width: 1100px; margin: auto; }
-    h2 { text-align: center; margin-bottom: 25px; color: #FFD700; font-size: 1.8rem; }
+    h2 { text-align: center; margin-bottom: 25px; color: #FFD700; font-size: 1.8rem; position: center; }
 
     /* Projects Carousel */
     .projects-carousel { position: relative; overflow: hidden; }
@@ -160,12 +160,38 @@
     .project-card:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0,0,0,0.6); }
     .project-card img { width: 100%; height: 200px; object-fit: contain; background: #000; border-bottom: 2px solid #FFD700; cursor: pointer; }
     .project-content { padding: 15px; }
-    .project-content h3 { margin: 0 0 10px; font-size: 1.2rem; color: #FFD700; }
-    .project-content p { font-size: 0.95rem; line-height: 1.4; margin-bottom: 15px; }
+    .project-content h3 { margin: 0 0 10px; font-size: 1.2rem; text-align: center; color: #FFD700; }
+    .project-content p { font-size: 0.95rem; line-height: 1.4; text-align: center; margin-bottom: 15px; }
     .project-links { display: flex; justify-content: space-between; align-items: center; }
     .project-links a { text-decoration: none; color: #FFD700; font-weight: bold; transition: color 0.3s ease; }
     .project-links a:hover { color: #FFC300; }
     .icon { width: 22px; height: 22px; }
+
+    /* Project Button */
+    .project-btn {
+      display: inline-block;
+      background: #FFD700;
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      transition: background 0.3s ease;
+      position: center;
+    }
+    
+    .project-btn:hover {
+      background: #FFC300;
+      color: #000;
+    }
+    
+    /* Ensure alignment inside project-links */
+    .project-links {
+      display: flex;
+      justify-content: center;  /* center aligns the button */
+      margin-top: 15px;
+    }
 
     /* Carousel Buttons */
     .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0, 0, 0, 0.5); color: #FFD700; border: none; padding: 10px; cursor: pointer; border-radius: 50%; font-size: 1.5rem; z-index: 10; }
@@ -264,6 +290,7 @@
   </script>
 </body>
 </html>
+
 
 
 
