@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nur Anis's Portfolio</title>
+  <title>Nur Anis |  Portfolio</title>
 </head>
 <body>
 
@@ -147,21 +147,70 @@
     /* Projects Carousel */
     .projects-carousel { position: relative; overflow: hidden; }
     .projects-wrapper { display: flex; transition: transform 0.5s ease-in-out; }
-    .project-card { min-width: 300px; max-width: 300px; margin: 0 10px; background: #222; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.5); transition: transform 0.3s ease, box-shadow 0.3s ease; flex-shrink: 0; }
-    .project-card:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0,0,0,0.6); }
-    .project-card img { width: 100%; height: 200px; object-fit: contain; background: #000; border-bottom: 2px solid #FFD700; cursor: pointer; }
-    .project-content { padding: 15px; }
-    .project-content h3 { margin: 0 0 10px; font-size: 1.2rem; text-align: center; color: #FFD700; }
-    .project-content p { font-size: 0.95rem; line-height: 1.4; text-align: center; margin-bottom: 15px; }
-    .project-links { display: flex; justify-content: space-between; align-items: center; }
-    .project-links a { text-decoration: none; color: #FFD700; font-weight: bold; transition: color 0.3s ease; }
-    .project-links a:hover { color: #FFC300; }
-    .icon { width: 22px; height: 22px; }
-
+    
+    .project-card { 
+      min-width: 300px; 
+      max-width: 300px; 
+      margin: 0 10px; 
+      background: #222; 
+      border-radius: 12px; 
+      overflow: hidden; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
+      flex-shrink: 0;
+    
+      /* NEW - make all cards flex column to pin button */
+      display: flex; 
+      flex-direction: column; 
+    }
+    
+    .project-card:hover { 
+      transform: translateY(-5px); 
+      box-shadow: 0 6px 15px rgba(0,0,0,0.6); 
+    }
+    
+    .project-card img { 
+      width: 100%; 
+      height: 200px; 
+      object-fit: contain; 
+      background: #000; 
+      border-bottom: 2px solid #FFD700; 
+      cursor: pointer; 
+    }
+    
+    .project-content { 
+      padding: 15px;
+    
+      /* NEW - flex column to push button down */
+      flex: 1; 
+      display: flex; 
+      flex-direction: column; 
+    }
+    
+    .project-content h3 { 
+      margin: 0 0 10px; 
+      font-size: 1.2rem; 
+      text-align: center; 
+      color: #FFD700; 
+    }
+    
+    .project-content p { 
+      font-size: 0.95rem; 
+      line-height: 1.4; 
+      text-align: center; 
+      margin-bottom: 15px; 
+    }
+    
+    .project-links { 
+      display: flex; 
+      justify-content: center;  /* center aligns the button */
+      margin-top: auto;         /* pushes button to bottom */
+    }
+    
     /* Project Button */
     .project-btn {
       display: inline-block;
-      background: #000;   /* gold background - #FFD700 */
+      background: #FFD700;   /* gold background */
       color: #000;           /* black text */
       padding: 8px 16px;
       border-radius: 6px;
@@ -175,13 +224,6 @@
     .project-btn:hover {
       box-shadow: 0 0 15px #FFD700;  /* glowing gold shadow on hover */
       transform: scale(1.05);        /* slight pop effect */
-    }
-        
-    /* Ensure alignment inside project-links */
-    .project-links {
-      display: flex;
-      justify-content: center;  /* center aligns the button */
-      margin-top: 15px;
     }
 
     /* Carousel Buttons */
@@ -281,6 +323,7 @@
   </script>
 </body>
 </html>
+
 
 
 
