@@ -161,22 +161,22 @@
     /* Project Button */
     .project-btn {
       display: inline-block;
-      background: #FFD700;
-      color: #FFF;
+      background: #000;   /* gold background - #FFD700 */
+      color: #000;           /* black text */
       padding: 8px 16px;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
       text-align: center;
-      transition: background 0.3s ease;
-      position: center;
+      transition: all 0.3s ease;
+      box-shadow: none;
     }
     
     .project-btn:hover {
-      background: #FFC300;
-      color: #000;
+      box-shadow: 0 0 15px #FFD700;  /* glowing gold shadow on hover */
+      transform: scale(1.05);        /* slight pop effect */
     }
-    
+        
     /* Ensure alignment inside project-links */
     .project-links {
       display: flex;
@@ -281,6 +281,7 @@
   </script>
 </body>
 </html>
+
 
 
 
